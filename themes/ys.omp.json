@@ -11,7 +11,19 @@
           },
           "style": "plain",
           "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }})",
-          "type": "python"
+          {
+ "type": "python",
+ "style": "plain",
+ "foreground": "#98C379",
+ "properties": {
+ "display_virtual_env": true,
+ "dispplay_default": true,
+ "display_version": false,
+ "prefix": "\uE235 ",
+ "postfix": " ",
+ "display_mode": "always"
+  }
+}
         }
       ],
       "type": "prompt"
